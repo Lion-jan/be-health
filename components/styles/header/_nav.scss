@@ -1,5 +1,8 @@
 .navbar {
 
+    label   {
+        display: none;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,10 +53,7 @@
         }
     }
 
-    & img {
-        display: none;
-    }
-
+    
 }
 
 
@@ -61,8 +61,12 @@
 @media (min-width:768px) and ( max-width:1120px){
 
 
-   
+   .navbar{
+    padding-left: 30px;
+    padding-left: 10px
+   }
 }
+
 
 
 @media ( max-width:767px){
@@ -76,6 +80,9 @@
         background-color: rgb(163, 146, 146);
        
     }
+        label{
+            display: block;
+        }
 
     .nav-links{
         display: none;
