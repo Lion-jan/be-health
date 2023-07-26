@@ -158,6 +158,106 @@
 .well .well-cards .well-card img {
   padding: 14px 16px;
   border-radius: 9px;
+}
+.well .well-cards .well-card p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 80px;
+}
+
+.well-text {
+  flex-basis: 50%;
+}
+
+.well {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  justify-content: space-between;
+  margin-top: 170px;
+}
+
+#well .well {
+  background-color: #f4f4f4;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .well-text {
+    flex-basis: 100%;
+  }
+  .well > img {
+    display: none;
+  }
+  .well-card {
+    align-items: center !important;
+    text-align: center;
+  }
+  .well-card p {
+    padding-left: 70px;
+  }
+  #well {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .well > img {
+    display: none;
+  }
+  .well-cards {
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 36px;
+  }
+  #well .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .well-text {
+    flex-basis: 100%;
+  }
+  .well-card {
+    align-items: center !important;
+    text-align: center;
+  }
+  .well-card p {
+    padding-left: 50px;
+  }
+  #well {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+}
+.well {
+  color: var(--text-text-secondary, #2B2B2B);
+}
+.well h3 {
+  font-size: 50.52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62px;
+  padding-bottom: 60px;
+}
+.well .well-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.well .well-cards .well-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.well .well-cards .well-card img {
+  padding: 14px 16px;
+  border-radius: 9px;
   background: var(--color-brand-green, #285E67);
 }
 .well .well-cards .well-card p {
@@ -179,10 +279,14 @@
   margin-top: 170px;
 }
 
-#well .container {
+#well2 .well {
   background-color: #f4f4f4;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
